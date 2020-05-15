@@ -1,0 +1,3 @@
+%AUTOMATION_DRIVE%
+cd %AUTOMATION_PATH%
+mvn clean test -P%AUTOMATION_PATH%\testng.xml

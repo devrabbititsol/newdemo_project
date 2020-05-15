@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Desktop Suite" parallel="tests">	
+	<test name="Desktop">
+		<classes>
+			<class name="desktop.testclasses.DesktopTest" />
+			<class name="com.fileupload.DesktopAutomationReportUpload" />
+		</classes>
+	</test>
+</suite>

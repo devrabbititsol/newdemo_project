@@ -1,0 +1,1272 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge"><title>Home</title><link href="http://10.11.12.141:98/images/favicon_64.png" type="png" rel="icon"><link href="http://10.11.12.141:98/images/favicon_64.png" type="png" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="/css/font-awesome.css"><link rel="stylesheet" type="text/css" href="/css/pep/openSansFont.css"><link rel="stylesheet" type="text/css" href="/css/pep/jquery-ui.css"><link rel="stylesheet" type="text/css" href="/css/pep/pep.css"><link rel="stylesheet" type="text/css" href="/css/pep/bootstrap.css"><link rel="stylesheet" type="text/css" href="/css/pep/plugins.css"><link rel="stylesheet" type="text/css" href="/css/pep/main.css"><link rel="stylesheet" type="text/css" href="/css/pep/bootstrap-multiselect.css"><link rel="stylesheet" type="text/css" href="/css/pep/app.css"><link rel="stylesheet" type="text/css" href="/css/pep/theme_blue.css"><link rel="stylesheet" type="text/css" href="/css/pep/dataTables.bootstrap.min.css"><link rel="stylesheet" type="text/css" href="/css/pep/jquery-bootstrap-datepicker.css"><link rel="stylesheet" type="text/css" href="/css/pep/multi-select.css"><link rel="stylesheet" type="text/css" href="/css/pep/starrr.css"><style type="text/css">.fullWidthContent {
+		width :98% !important;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	.jqstooltip {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		visibility: hidden;
+		background: rgb(0, 0, 0) transparent;
+		background-color: rgba(0, 0, 0, 0.6);
+		filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+		color: white;
+		font: 10px arial, san serif;
+		text-align: left;
+		white-space: nowrap;
+		padding: 5px;
+		border: 1px solid white;
+		z-index: 10000;
+	}
+	.jqsfield {
+		color: white;
+		font: 10px arial, san serif;
+		text-align: left;
+	}
+	.nav>li>a:focus,.nav>li>a:hover {
+		background: transparent!important;
+	} 
+	.user ul li{
+		float:left;
+		
+	}
+
+	 
+	#panel {
+		padding: 5px;
+		text-align: center;
+		background-color: #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
+	#panel:before{
+		width: 0;
+		height: 0;
+		content: "";
+		top: -5px;
+		left: -14px;
+		position: relative;
+		border-style: solid;
+		border-width: 0 13px 13px 0;
+		border-color: transparent #ffffff transparent transparent;
+	}
+	#panel {
+		top:50px!important;
+		position:absolute;
+		padding: 50px;
+		display: none;
+	}
+
+	.arrow{
+		 left: 50%!important;
+			
+	}
+	.popover-title{
+		color: #2d2d2d;
+		font-size: 15px;
+		font-weight: 600;
+		}
+	textarea.form-control{
+		width: 100%!important;
+		margin-bottom: 10px;
+		height: 120px!important;
+		}
+		.whiteColor{
+			color : white;
+		}
+	.contactInfo,.quickInfo{
+		font-size: 14px;
+		float: right;
+		padding-top: 2px;
+		color: white;
+		text-align: center;
+		font-weight: 600;
+		margin-right: 10px;
+		vertical-align: middle;
+		background: #207baf;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		margin-top: 13px;
+		border: 2px dotted #d6d6d6;
+	}
+	.contactInfo:hover,.quickInfo:hover {
+		background: #e18b12;
+		border: 2px solid #d6d6d6;
+
+	}
+	.quickLinksChild li {
+			border: 1px dashed #e3e3e3 !important;
+			background: #ededed;
+			width: 50%;
+			float: left;
+			height: 63px;
+			margin-left: 0px;
+			text-align:center;
+	}
+	.quickLinksChild .quickIcon {
+		display:block;
+		opacity: .7;
+		color: #838383 !important;
+	}
+	.quickLinksChild li div {
+		font-weight: bold;
+		opacity: .7;
+		font-size: 13px;
+		color: #4365a4;
+	}
+	.quickLinkshghlgt li.active, .quickLinksChild li.active:hover{
+		background-color:#daedf7 !important;
+	}
+	.search_section button{
+		 position: relative;
+		height: 32px;
+		z-index: 2;
+		border: 0px;
+		width: 34px;
+		padding: 0px;
+		color: white;
+		/* border: 1px solid #ccc; */
+		background-color: #c3c3c3;
+	}
+	.cd-dropdown, .cd-select{  
+		position: relative;
+		width: 100%;
+		margin: 0px;
+		display: block;
+		z-index: 99;
+	}
+	#projectSearch .mySearch
+	{
+		position: absolute;
+		left: 0px;
+		width: 35px;
+
+	}
+	.cd-dropdown > span{    
+		width: 48px;
+		height: 25px;
+		line-height: 25px;
+		color: #cdcdcd;
+		display: block;
+		padding: 0 23px 0 0px;
+		position: relative;
+		cursor: pointer;
+	}
+	.search_section input{
+		position: relative;
+		z-index: 1;		
+	}
+	.search_section label, .search_section select, .search_section input, .search_section a{   
+		margin-bottom: 0px;
+		float: left;
+		margin-top: 0px;
+		
+	}
+	.cd-dropdown ul{    
+		position: absolute;
+		top: 0px;
+		width: 175px;
+		box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		border: 0px solid #ddd;
+	}
+	.toggle-search-wrapper .fa{
+		margin-left: 5px;
+	 }
+	.ui-widget.ui-widget-content {
+		position: fixed;
+	}
+	.srchopt{
+		display: inline-block;
+		width: 36%;
+	}
+	.srchinp{
+		display: inline-block;
+		width: 64%;
+	}</style> <script type="text/javascript" src="/js/pep/jquery-1.12.4.js"></script> <script type="text/javascript" src="/js/pep/bootstrap.js"></script> <script type="text/javascript" src="/js/pep/jquery-ui.js"></script> <script type="text/javascript" src="/js/pep/moment.min.js"></script> <script type="text/javascript" src="/js/sshris_V3.js"></script> <script type="text/javascript" src="/js/pep/dashboard.js"></script> <script type="text/javascript" src="/js/pep/jquery.dataTables.min.js"></script> <script type="text/javascript" src="/js/ko/knockout-latest.debug.js"></script> <script type="text/javascript" src="/js/ko/knockout.mapping-latest.debug.js"></script> <script type="text/javascript" src="/js/pure.js"></script> <script type="text/javascript" src="/js/pep/bootstrap-multiselect.js"></script> <script type="text/javascript" src="/js/pep/highcharts.js"></script> <script type="text/javascript" src="/js/pep/exporting.js"></script> <script type="text/javascript" src="/js/pep/jquery.multi-select.js"></script> <script type="text/javascript" src="/js/pep/starrr.js"></script> <script type="text/javascript" src="/js/pep/dateSort.js"></script> <style>@-webkit-keyframes marqueeAnimation-8354994  { 100%  {margin-top:-633px}}</style></head><body class="fixed-header fixed-left-sidebar fixed-right-sidebar pace-done modal-open"><div id="wrap" style="display: block;"> <header class="top"> <a href="/dashboard/info" title="PEP Portal"><img src="/img/pep/peplogo.png" alt="pep" style="float:left;width: 85px; margin-top: 8px;margin-left: 5px;" class="PEP"></a> <a href="https://www.prolifics.com/" target="_blank" title="Prolifics"><img src="/img/pep/prolifics.png" alt="prolifics" style="float:right;width: 125px;margin-left: 17px;" class="brandlogo"></a><div class="row"><div class="user js-user col-md-12" style="padding-bottom: 15px;"><div class=" col-md-12"><ul class="list-unstyled"><li style="line-height:50px;"><a class="color-white" data-placement="bottom" data-toggle="popover" data-title="Login" type="button" data-html="true" href="#" id="logOutBtn" data-original-title="" title=""> <img src="/images/give-pep.png" class="pepImg"></a></li><div id="popover-content" class="hide"><form class="form-inline" role="form" id="fbForm"><div class="form-group col-xs-12 p0"><div class="starWrapper"> <input type="hidden" class="clickStarVal"> <i class="fa fa-lg fa-star-o feedStar1" data-value="1"></i> <i class="fa fa-lg fa-star-o feedStar2" data-value="2"></i> <i class="fa fa-lg fa-star-o feedStar3" data-value="3"></i> <i class="fa fa-lg fa-star-o feedStar4" data-value="4"></i> <i class="fa fa-lg fa-star-o feedStar5" data-value="5"></i></div><textarea placeholder="We would love to hear your thoughts, concerns or problems with anything so we can improve !" id="fbArea" class="form-control m-10" cols="25" rows="5"></textarea><br><div id="fbloadingImg" class="loadingImg displayNone" maxlength="800"><img src="/img/ajax-loader1.gif" class="ajax-loader"></div> <button type="button" id="" class="btn btn-sm btn-owncolor mb10 mt5 fbSbm"><i class="fa fa-save"></i> Submit </button> <a class="btn btn-sm btn-owncolor pull-right mt5" title="Log out!" href="http://10.11.12.141:98/employees/logout"><i class="fa fa-power-off color-white"></i> Logout</a></div></form></div></ul></div></div> <a href="/employees/directory" title="Directory" style="font-size:14px;float:right;padding-top:6px;color:white;text-align:center;font-weight: 600;"> <i alt="Directory" class="fa fa-sitemap" style="font-size:22px;color:white;"></i><p class="m0">Directory</p></a> <a href="javascript:" title="Quick Links" class="quickInfo" data-toggle="modal" data-target="#linksModal"> <i alt="Quick Links" class="fa fa-external-link" style="font-size: 14px;color: #e1e1e1;"></i></a> <a href="javascript:" title="Contact Information" class="contactInfo" data-toggle="modal" data-target="#contactModal"> <i alt="Contact Information" class="fa fa-phone" style="font-size: 14px;color: #e1e1e1;"></i></a><div class="toggle-search-wrapper " style="display: inline-flex;margin-top: 0.75%;margin-right:5px;"><div class="col-md-12 search_section navbar-right res_profile mr0"><div class="search_section navbar-right mr0"><div class="col-md-12 col-sm-6 col-xs-3 p0"><div class="mySearch srchopt"> <select class="pui-select mySearch" name="searchType" data-template="#dropdown" id="customsearch"><option value="Employee" selected=""> Employee</option><option value="Skills"> Skills</option><option value="Hobbies"> Hobbies</option> </select></div><div class="srchinp no-padding hidden-sm"> <select name="data[gSearch]" id="searchKey" class="init keysearch form-control" placeholder="Employee" style="display: none;"><option value=""></option> </select><input class="ui-autocomplete-input ui-widget" autocomplete="off"></div></div><div class="clearfix"></div></div></div><div class="clearfix"></div></div></div></header></div> <div id="search-partial"></div> <section class="content"><div class="main-tabs"><div> <nav class="main-navigation"><ul><li class="overview current"> <a href="/dashboard/info" class="main-nav-link" title="Home"> <img class="main-nav-icon" src="/img/pep/home_light.png" alt="Home Icon"> </a></li><li class="profile "> <a href="/employees/profile" class="main-nav-link " title="My Info"><div class="tiny-avatar"><div class="avatar-bg" style="background-image: url(/images/profiles/emp_007.png);"></div></div> </a></li><li class="calendar "> <a href="/team/dashboard" class="main-nav-link" title="Dashboard"> <img class="main-nav-icon" src="/img/pep/team.png" alt="Dashboard "> </a></li><li class="calendar "> <a href="/team/pendingApprovals" class="main-nav-link" title="pendingApprovals"> <img class="main-nav-icon" src="/img/pep/pending.png" alt="pendingApprovals "> </a></li><li class="calendar "> <a href="/Travel/travelRequests" class="main-nav-link" title="Travel"> <img class="main-nav-icon" src="/img/pep/travel.png" alt="Travel "> </a></li></ul> </nav></div> <script>/*<![CDATA[*/$(document).ready(function(){
+		 $('.phone').bind("cut copy paste",function(e) {
+			 e.preventDefault();
+		 });
+		 
+		//allow phone numbers only
+		$(document).on('keypress keydown keyup','.phone',function (event) {
+			var phoneNo = event.key;
+			if(event.which != 8 && phoneNo != '+' && phoneNo != '-' && isNaN(phoneNo)){
+				event.preventDefault();						
+			}
+			else{				
+				return true;
+			}			
+		});
+		
+		//allow numbers only
+		$(document).on('keypress keydown keyup','.numbersOnly',function (event) {
+		var inputValue = event.key;
+			//var inputValue = event.charCode || event.keyCode;
+			if(event.which != 8 && isNaN(inputValue)){
+			//if((inputValue < 49 && inputValue > 57) && (inputValue < 96 && inputValue > 105) &&(inputValue != 32 && inputValue != 189)){
+				//if(isNaN(String.fromCharCode(event.which)) &&(inputValue != 32 && inputValue != 189)){
+				event.preventDefault();		
+			}
+		});
+		//allow alphabets only
+		$(document).on('keypress keydown keyup','.nameOnly',function (event) {
+			var inputValue = event.charCode || event.keyCode;
+			if(!(inputValue >= 65 && inputValue <= 122) &&(inputValue != 32 && inputValue != 0 && inputValue != 8)){
+				
+				event.preventDefault();		
+			}
+			else if((inputValue == 91 || inputValue == 92 || inputValue == 93 || inputValue == 94 || inputValue == 95 || inputValue == 96)){
+				event.preventDefault();
+			}
+		});
+		
+		
+		
+	$(document).on('keypress keydown keyup','.alphanumericOnly',function (e) {
+			var regex = new RegExp("^[a-zA-Z0-9\b]+$");
+			var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+			if (regex.test(str)) {
+				return true;
+			}
+
+			e.preventDefault();
+			return false;
+		});
+		
+	
+	});
+	
+	$(document).on('click','.leftClick', function(e){
+		$.ajax({
+			type: "POST",
+			dataType: 'html',
+			data: '',	
+			url: "/employees/unsetteamsession",	
+			async: true,
+			cache: false,
+			success: function(response){
+				window.location.href = "/profile";
+			}
+		});
+	});/*]]>*/</script> </div><div class="main   ?&gt;"><div id="page-wrapper"><style>.navbar-collapse {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.navbar-nav>li {
+		margin-left: 5px;
+	}
+	#teamDirectory{
+		border-radius: 2px;
+		padding: 3px 6px 3px 6px;
+		background: #16a085;
+		color: white;
+		cursor: pointer;
+		border-radius: 4px !important;
+		border: 2px solid #51bf87;
+		box-shadow: 1px 1px 1px 1px #c2c2c2;
+	}
+	a#teamDirectory:hover {
+		background: #51bf87;
+	}
+	#teamDirectory i{
+		font-size:16px;
+	}
+	#closeTeamTree{
+		padding: 11px 7px 3px 3px;
+		cursor:pointer;
+		color: white;
+		/*border-radius: 2px;
+		background: #65a9a9;*/
+	} 
+	#teamDirectoryPopup {
+		height: auto;
+		position: fixed;
+		z-index: 9999;
+		width:350px;
+		margin-left: -10px;
+	}
+	.sidebar-header{
+		background-color:#207baf;
+		border-radius: 2px;
+	}
+	.sidebar-header h3{
+		color:#ffffff;
+	}
+	.teamTree a {
+		color: #333333;
+		line-height: 16.5px;
+		font-weight: 400;
+		font-style: normal; 
+	}
+	.jstree-default .jstree-node {
+		float :left;
+	}
+	.jstree-default .jstree-anchor {
+		font-weight:normal;
+	}
+	#teamDirectoryPopup ul li {
+		position: relative;
+	}
+	.treeAlign {
+		float: left;
+		text-align: left;
+		overflow: auto;
+		max-width: 100%;
+	}
+	.emplistng {
+		border-radius: 0px;
+	}
+
+	#navbar .active > :first-child :after {
+		content:'';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 34px;
+		margin: 0 auto;
+		width: 0;
+		height: 0;
+		border-top: 9px solid #0BACD3 ;
+		border-left: 11px solid transparent;
+		border-right: 11px solid transparent;
+	}</style><div class="clear"></div> <script>$(document).ready(function(){
+		$(".alert").fadeTo(2000, 500).slideUp(500, function(){
+			$(".alert").slideUp(500);
+		});
+		// if($(".mainMenu").hasClass("active")){
+			// $(".active").addClass("downarrw");
+		// }
+	});</script> <div class="col-md-12"><div id="fbSuccessAlert" class="col-md-12 clear p0"><div class="flashSuccess m5 ff pull-left col-xs-12"> <strong id="fbSuccessAlertMsg"> </strong></div></div></div><div class="col-md-12"><div id="fbFailAlert" class=" col-md-12 clear p0"><div class="flashDanger m5  ff pull-left col-xs-12"> <strong id="fbFailAlertMsg"> </strong></div></div></div><style>*{
+	outline:1px solid red;
+}
+.clear{
+	display:none !important;
+}
+.widmodal{
+	width:60%;
+}
+.camera_wrap, .camera_azure_skin {
+    height: 30vh !important;
+}
+b.timedtls{
+	background-color: rgba(11,172, 211, 0.61);
+    padding: 1px;
+    color: white;
+    padding-left: 0px;
+	border-width: 3px !important;
+	border-style: solid;
+	border-color: rgba(11, 172, 211, 0.611764705882353) !important;
+}
+.timestamp p.hd{
+    padding: 1px;
+    border-right-width: 3px;
+	border-right-style:solid;
+	border-color: rgba(11, 172, 211, 0.611764705882353) !important;;
+	font-size: 12px;
+}
+.timestamp span{
+	font-size: 12px;
+}
+.fc-basic-view .fc-body .fc-row{
+	min-height:2em;
+	height: 38px !important;
+    border-bottom: 1px solid #ddd;
+}
+.fc-content span{
+	font-size: 9px;
+}
+.fc-basic-view td.fc-week-number span, .fc-basic-view td.fc-day-number{
+	font-weight: bold;
+    font-size: 10px;
+    color: #454545;
+}
+.fc-center h2{
+    font-size: 14px;
+	color: #16a085;
+	font-weight:bold;
+	float: none !important;
+	line-height: 0;
+}
+button.fc-today-button.fc-button.fc-state-default.fc-today-button {
+    padding: 1px 4px 1px 4px;
+    font-size: 12px;
+}
+span.fc-icon.fc-icon{
+	font-size: 10px;
+}
+button.fc-button.fc-state-default {
+    padding: 2px;
+    height: 1.5em;
+    padding-top: 0px;
+	margin-bottom: 2px !important;
+}
+th.fc-day-header.fc-widget-header {
+    padding: 1px 0 !important;
+    font-size: 12px;
+}
+.fc-time{
+	display:none;
+}
+.imgsty{
+	position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+.divhgt{
+	//height:361px;
+}
+.divhgtnoti{
+	height:351px;
+}
+.notifyMe {
+		height :30vh !important;
+}
+.content .main {
+	min-height :89vh !important;
+}
+.content {
+		padding-bottom:0px;
+}</style><link rel="stylesheet" type="text/css" href="/min-css?f=css/wrapper.css,css/carosal.css"><script type="text/javascript" src="/min-js?f=js/camera.min.js,js/jquery.infinitecarousel.js,js/jquery.marquee.js"></script> <div class="dashboardPrnt"><div class="grid_16 successNotifyMsg clear"><div class="ui-state-highlight ui-corner-all inner-successMsg"> <span class="ui-icon ui-icon-info" style="float:left; margin-right:0.3em;"></span> <strong id="notifyWishes">Your wish sent...</strong></div></div><div class="padder"><div id="successAlert" class="col-md-12 mb5 clear"><div class="flashSuccess ff pull-left col-xs-12"> <strong id="successAlertMsg"> </strong></div></div><div id="page" style="display: block;"><div id="" class="hr-as-ee" style="display: block;"> <section class="row parent borderless mt0 m10"><div id="wrapper"><div class="page-content sidebar-page clearfix p0"><div class="page-content-wrapper"><div class="page-content-inner p0"><div class="clearfix mb5 bannerBg"> <section class="col-md-12 borderless" style="background-color: rgba(0, 0, 0, 0.49019607843137253);"><div class="row employee-manage "><div class="col-xs-12 p5"><div class="form-group"><div class="col-lg-7 col-xs-12 col-sm-5 greeting p0 mt20" title="Ranga Swamy"> <span class="ml10" title="Ranga Swamy"> Hey! Ranga Swamy </span></div><div class="col-lg-3 col-xs-12 col-sm-6 p0"><div class="panel-body p0"><div class="text-center"><div id="container" class="hpMeterChart p0" data-highcharts-chart="0"><div id="highcharts-vqukn4e-0" class="highcharts-container " style="position: relative; overflow: hidden; width: 399px; height: 250px; text-align: left; line-height: normal; z-index: 0;"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="399" height="250" viewBox="0 0 399 250"><desc>Created with Highcharts 5.0.12</desc><defs><clipPath id="highcharts-vqukn4e-1"><rect x="0" y="0" width="399" height="250" fill="none"></rect></clipPath></defs><rect fill="none" class="highcharts-background" x="0" y="0" width="399" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="0" y="0" width="399" height="250"></rect><rect fill="none" class="highcharts-plot-border" x="0" y="0" width="399" height="250"></rect><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-pie-series highcharts-color-undefined highcharts-tracker" transform="translate(0,0) scale(1 1)"><path fill="rgb(130, 195, 54)" d="M 84.500009541038 125.04684483587826 A 115 115 0 1 1 314.4999425000048 124.88500001916667 L 256.9999712500024 124.94250000958333 A 57.5 57.5 0 1 0 142.000004770519 125.02342241793913 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" class="highcharts-point highcharts-color-0"></path><path fill="rgba(255, 255, 0, 0.8)" d="M 314.5 125 A 115 115 0 0 1 314.4999425000048 124.88500001916667 L 256.9999712500024 124.94250000958333 A 57.5 57.5 0 0 0 257 125 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" class="highcharts-point highcharts-color-1"></path><path fill="rgba(255, 255, 255, 0.85)" d="M 314.5 125 A 115 115 0 0 1 314.4999425000048 124.88500001916667 L 256.9999712500024 124.94250000958333 A 57.5 57.5 0 0 0 257 125 Z" transform="translate(0,0)" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" class="highcharts-point highcharts-color-2"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-pie-series highcharts-color-undefined " transform="translate(0,0) scale(1 1)"></g></g><g class="highcharts-data-labels highcharts-series-0 highcharts-pie-series highcharts-color-undefined highcharts-tracker" transform="translate(0,0) scale(1 1)" opacity="1"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(176,30)"><text x="5" style="font-size:11px;font-weight:bold;color:black;fill:black;" y="16"><tspan x="5" y="16" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">Happy</tspan><tspan x="5" y="16">Happy</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(280,115)"><text x="5" style="font-size:11px;font-weight:bold;color:black;fill:black;" y="16"></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 " transform="translate(280,115)"><text x="5" style="font-size:11px;font-weight:bold;color:black;fill:black;" y="16"></text></g></g><g class="highcharts-legend"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g><g></g></g></g><text x="389" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="245">Highcharts.com</text></svg></div></div><div class="panel-heading p0"><h4 class="panel-title text-center date m0 p0" style="color: #fff;"> Happiness Meter</h4></div></div></div></div><div class="col-lg-2 col-xs-12 col-sm-6 p0 timestamp" style="margin-top:1%;"> <b class="timedtls"><p class="hd mb0" style="display: inline-block;width: 95px;">Last Login Date</p> &nbsp;<span style="width: 100px;">23-Jan-2020</span></b></div></div></div></div><div class="row"><div class="col-lg-8 col-md-12"></div></div> </section></div><div class="row"><div class="col-xs-12 col-md-6 p0 "><div class="col-sm-12 col-xs-12 pt10"><div class="c_panel c_panel_default notifyMe b divhgtnoti"><div class="c_title"><h3>Notifications</h3><div class="clearfix"></div></div><div class="c_content" id="official_notifications"><ul class=" timeline timeline-icons"><li class="media event p5 pl10 mb10"> <a class="pull-left border-aero profile_thumb"> <i class="fa fa-exclamation aero"></i> </a><div class="media-body"><h3 class="mt5" style="color: #555;padding-left:2px;">No Notifications Available</h3></div></li></ul></div></div></div></div><div class="col-xs-12 col-md-6 p0 divhgt"><div class=""><div class="col-md-12 col-xs-12 pt10"><div class="panel panel-default plain brad0 " id="dyn_6"><div id="carousel" class="carousel slide"><div class="camera_wrap camera_azure_skin" id="camera_wrap_1" style="display: block; height: 350px;"><div class="camera_fakehover"><div class="camera_src camerastarted"><div data-src="/images/slider/Prolifics.jpg" data-portrait="true"></div><div data-src="/images/slider/images.jpg" data-portrait="true"></div><div data-src="/images/slider/Prolifics.jpg" data-portrait="true"></div><div data-src="/images/slider/HR.jpg" data-portrait="true"></div><div data-src="/images/slider/Prolifics.jpg" data-portrait="true"></div></div><div class="camera_target"><div class="cameraCont"><div class="cameraSlide cameraSlide_0" style="visibility: visible; display: none; z-index: 1; margin-left: 0px; margin-top: 0px;"><img src="/images/slider/Prolifics.jpg?1580203982203" class="imgLoaded" style="visibility: visible; height: 350px; margin-left: 95.6875px; margin-right: 95.6875px; margin-top: 0px; position: absolute; width: 597.625px;" data-alignment="" data-portrait="true" width="1366" height="800"><div class="camerarelative" style="width: 789px; height: 350px;"></div></div><div class="cameraSlide cameraSlide_1" style="display: none; z-index: 1; margin-left: 0px; margin-top: 0px;"><img src="/images/slider/images.jpg?1580203982858" class="imgLoaded" style="visibility: visible; height: 350px; margin-left: 59.375px; margin-right: 59.375px; margin-top: 0px; position: absolute; width: 670.25px;" data-alignment="" data-portrait="true" width="766" height="400"><div class="camerarelative" style="width: 789px; height: 350px;"></div></div><div class="cameraSlide cameraSlide_2 cameracurrent" style="display: block; z-index: 999; margin-left: 0px; margin-top: 0px;"><img src="/images/slider/Prolifics.jpg?1580204008365" class="imgLoaded" data-alignment="" data-portrait="true" width="1366" height="800" style="visibility: visible; height: 350px; margin-left: 95.6875px; margin-right: 95.6875px; margin-top: 0px; position: absolute; width: 597.625px;"><div class="camerarelative" style="width: 789px; height: 350px;"></div></div><div class="cameraSlide cameraSlide_3 cameranext" style="display: none; z-index: 1; margin-left: 0px; margin-top: 0px;"><img src="/images/slider/HR.jpg?1580204032285" class="imgLoaded" data-alignment="" data-portrait="true" width="714" height="430" style="visibility: visible; height: 350px; margin-left: 103.91860465116281px; margin-right: 103.91860465116281px; margin-top: 0px; position: absolute; width: 581.1627906976744px;"><div class="camerarelative" style="width: 789px; height: 350px;"></div></div><div class="cameraSlide cameraSlide_4" style="display: none; z-index: 1; margin-left: 0px; margin-top: 0px;"><img src="/images/slider/Prolifics.jpg?1580204056256" class="imgLoaded" data-alignment="" data-portrait="true" width="1366" height="800" style="visibility: visible; height: 350px; margin-left: 95.6875px; margin-right: 95.6875px; margin-top: 0px; position: absolute; width: 597.625px;"><div class="camerarelative" style="width: 789px; height: 350px;"></div></div><div class="cameraSlide cameraSlide_5 cameranext" style="z-index: 1; display: none;"><div class="camerarelative" style="width: 789px; height: 350px;"></div></div></div></div><div class="camera_overlayer"></div><div class="camera_target_content"><div class="cameraContents"><div class="cameraContent" style="display: none;"><div class="carousel-caption camera_caption fadeFromBottom" style="visibility: hidden; opacity: 1; bottom: 0px;"><div><div class="imgsty"><h3 class="slidertagline" style="padding-left: 10px !important;">Prolifics</h3> <label style="word-break: break-word;">test</label></div></div></div></div><div class="cameraContent" style="display: none;"><div class="carousel-caption camera_caption fadeFromBottom" style="visibility: hidden; opacity: 1; bottom: 0px;"><div><div class="imgsty"><h3 class="slidertagline" style="padding-left: 10px !important;">Prolifics</h3> <label style="word-break: break-word;">Prolifics IBM </label></div></div></div></div><div class="cameraContent cameracurrent" style="display: block;"><div class="carousel-caption camera_caption fadeFromBottom" style="visibility: visible; opacity: 1; bottom: 0px;"><div><div class="imgsty"><h3 class="slidertagline" style="padding-left: 10px !important;">Prolifics</h3> <label style="word-break: break-word;">test</label></div></div></div></div><div class="cameraContent" style="display: none;"><div class="carousel-caption camera_caption fadeFromBottom" style="visibility: hidden; opacity: 1; bottom: 0px;"><div><div class="imgsty"><h3 class="slidertagline" style="padding-left: 10px !important;">Prolifics</h3> <label style="word-break: break-word;">Prolifics Takes Home 10 Awards at the 2019 World HRD Congress</label></div></div></div></div><div class="cameraContent" style="display: none;"><div class="carousel-caption camera_caption fadeFromBottom" style="visibility: hidden; opacity: 1; bottom: 0px;"><div><div class="imgsty"><h3 class="slidertagline" style="padding-left: 10px !important;">Prolifics</h3> <label style="word-break: break-word;">test</label></div></div></div></div></div></div><div class="camera_bar" style="display: none; top: auto; height: 7px;"><span class="camera_bar_cont" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(34, 34, 34);"><span id="pie_0" style="opacity: 0.8; position: absolute; background-color: rgb(238, 238, 238); left: 0px; right: 0px; top: 6px; bottom: 6px; display: none;"></span></span></div><div class="camera_prev"><span></span></div><div class="camera_next"><span></span></div></div><div class="camera_loader" style="display: none; visibility: visible;"></div></div></div></div></div></div></div></div><div class="clearfix" style="height:5px"></div><div class="row"><div class="col-lg-6 col-sm-6 col-xs-12"><div class="c_panel c_panel_default notifyMe b"><div class="c_title"><h3>Reminders and Tasks</h3><div class="clearfix"></div></div><div class="c_content"><ul class="pl0"><li class="list-group-item clearfix comment-success brad5  p5 pl10 m0 mb5"> <i class="fa fa-circle-o" style="font-size: 10px;"></i> <a href="javascript:" id="trainingHrs" title="Learning Hours from past 365 days" style="cursor: text;"> Learning Hours from past 365 days - <span> <b>NA</b> </span> </a></li><li class="list-group-item clearfix comment-success brad5  p5 pl10 m0 mb5"> <i class="fa fa-circle-o" style="font-size: 10px;"></i> <a href="/dms/index/policy" target="_new">Check out the Policy Docs</a></li></ul></div></div></div><div class="col-lg-6 col-sm-6 col-xs-12"><div class="c_panel c_panel_default notifyMe b"><div class="c_title"><h3>Announcements</h3><div class="clearfix"></div></div><div class="c_content" id="generalNotifications"><style>.media .date {
+    width: 50%;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px;
+	background:none;
+}
+.ancDescription{
+	background-color: #eee;
+    border: 0px solid #dfdfdf;
+}</style><ul class="marquee list-group recent-comments generalNotifications timeline " id="generalNotify" style="height: 221px;"><div class="js-marquee-wrapper" style="margin-top: 221px; -webkit-animation: marqueeAnimation-8354994 19.32126696832579s linear 0.01s infinite; animation: marqueeAnimation-8354994 19.32126696832579s linear 0.01s infinite;"><div class="js-marquee" style="margin-right: 0px; float: none; margin-bottom: 0px;"><li class="media event p5 pl10 mb10"> <a class="pull-left border-aero profile_thumb"> <i class="fa fa-bullhorn aero"></i> </a><div class="media-body pl10"><p align="left">tilte new</p><p align="left"></p><pre class="ancDescription p0">news description</pre><p></p></div></li><li class="media event p5 pl10 mb10"> <a class="pull-left border-aero profile_thumb"> <i class="fa fa-bullhorn aero"></i> </a><div class="media-body pl10"><p align="left">tilte new</p><p align="left"></p><pre class="ancDescription p0">news description</pre><p></p></div></li><li class="media event p5 pl10 mb10"> <a class="pull-left border-aero profile_thumb"> <i class="fa fa-bullhorn aero"></i> </a><div class="media-body pl10"><p align="left">tilte new</p><p align="left"></p><pre class="ancDescription p0">news description</pre><p></p></div></li><li class="media event p5 pl10 mb10"><div class="timeline-user clearfix mb5 pb5"><h4 class="timeline-title">Investment Validation Guidelines</h4> <span class="text-muted small pull-right"> <a class="strong" href="/dms/hr/hrpolicies/investment_validation_guidelines_2019-2020.pdf" target="_blank"> Click Here To View </a> </span></div></li><li class="media event p5 pl10 mb10"><div class="timeline-user clearfix mb5 pb5"><h4 class="timeline-title">Workplace Survey - 2019</h4> <span class="text-muted small pull-right"> <a class="strong" href="/files/Workplace Survey.pdf" target="_blank"> Click Here To View </a> </span></div></li><li class="media event p5 pl10 mb10"><div class="timeline-user clearfix mb5 pb5"><h4 class="timeline-title"> TownHall -  December 2019</h4> <span class="text-muted small pull-right"> <a class="vedioplay strong" href="javascript:" onclick="vedioSubmit2('/videos/Prolifics_townhall_20191203.mp4')"> Click Here To View The Meeting </a> </span></div></li><li class="media event p5 pl10 mb10"><div class="timeline-user clearfix mb5 pb5"><h4 class="timeline-title"> Innovation - August 2019</h4> <span class="text-muted small pull-right"> <a class="vedioplay strong" href="javascript:" onclick="vedioSubmit('/videos/GMT20191010-134529_Innovation_2560x1440.mp4')"> Click Here To View The Meeting </a> </span></div></li><li class="media event p5 pl10 mb10"><div class="timeline-user clearfix mb5 pb5"><h4 class="timeline-title"> TownHall - August 2018</h4> <span class="text-muted small pull-right"> <a href="https://pep.prolifics.com/dashboard/townhall" target="_blank"><b>Click Here To View The Meeting</b> </a></span></div></li></div></div></ul><form action="/Support/playVideo" method="post" id="vedioForm" target="_blank"> <input id="vedioPlay" type="hidden" name="filePath" value=""></form> <script>function vedioSubmit(filepath){
+        $('#vedioPlay').attr('value',filepath);
+        $('#vedioForm').attr('action','/Support/playVideo');
+        $('#vedioForm').submit();
+    }
+	function vedioSubmit2(filepath){
+        $('#vedioPlay').attr('value',filepath);
+        $('#vedioForm').attr('action','/Support/meeting');
+        $('#vedioForm').submit();
+    }
+ $(document).ready(function() { 
+
+	// $('.marquee').marquee({
+		// duration: 5000,
+		// gap:10,
+		// delayBeforeStart:10,
+		// direction:'up',
+		// pauseOnCycle:true,
+		// pauseOnHover:true
+	// });
+	
+	if($('ul.generalNotifications').html()==''){
+		$('ul.generalNotifications').hide();	
+	}
+	});</script> </div></div></div></div></div></div> </div></div></section><div class="clear"></div><div class="full-page-border" style="border:0px;"></div><div class="row parent activity-profile js-history"></div></div></div></div></div></div><div class="modal fade" id="TrainingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"><div class="modal-dialog modal-lg widmodal" role="document"><div class="modal-content"><div class="modal-header"> <strong class="modal-title" id="exampleModalLongTitle">Training Hours</strong> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="fa fa-times"></i></span> </button></div><div class="modal-body" style="max-height: 651px;"><div id="showtrainingsList"></div><div class="clear" id="hidetrainingsList"><table id="trainingHrsTpl" style="width:100%;" class="table table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="basic-datatables_info"><thead><tr><th class="text-center">S.No</th><th class="text-center">Employee Id</th><th class="text-center">Employee Name</th><th class="text-center">Course Name</th><th class="text-center">Class Name</th><th class="text-center">Learning Hours</th><th class="text-center">Start Date</th><th class="text-center">End Date</th></tr></thead><tbody><tr class="trainingHrsTr"><td class="sno text-center"></td><td class="EmployeeId"></td><td class="EmployeeName"></td><td class="CourseName"></td><td class="ClassName"></td><td class="LearningHours text-right"></td><td class="StartDate"></td><td class="EndDate"></td></tr></tbody></table></div></div></div></div></div> <script>/*<![CDATA[*/function sayCongrats(EmpId,type){
+		$('#viewJoins').modal('toggle');
+		$('#sayCongrats #empid').val(EmpId);
+		$('#sayCongrats #msgType').val(type);
+		if(type=='BIRTHDAY'){
+			$('#sayCongrats .modal-title').html('Send Wishes');
+		}
+		$('#sayCongrats').modal('show');
+	}
+	
+	var calStDate = '2020-01-28';  
+   $(document).ready(function() { 
+		if($('#generalNotifications').height() < $('ul.generalNotifications').height()) {
+			 $('ul.generalNotifications').addClass('marquee');
+		}
+		var empId = '13357';
+		var locIndia = '';
+		var totalTrainingHrs = '0';
+		if(totalTrainingHrs > 0){
+			$('#trainingHrs').css('cursor','pointer');
+			$('#trainingHrs').click(function(){
+			$.ajax({
+				type : "POST",
+				dataType : 'json',
+				data : 'empId='+empId,
+				url : "/dashboard/empLearnings",
+				async : true,
+				cache : false,
+				success : function(response){ 
+					//console.log('response ',response);
+					$("#TrainingModal").modal('show');
+					if(response.length > 0){					
+						$(".showtrainingsList").DataTable().destroy();
+						$('#showtrainingsList').html($('#hidetrainingsList').html());
+						$("#showtrainingsList").find('table').addClass('showtrainingsList');
+						var Dir = { 
+							"tr.trainingHrsTr":{
+								"training <- context":{
+									"@class+" : function(arg){return (arg.pos % 2 == 0) ? ' odd': ' even';},   
+									"td.sno"		    : function(arg){return arg.pos+1;}, 
+									"td.EmployeeId"		: function(arg){return arg.item.EmpId;},
+									"td.EmployeeName"	: function(arg) {return arg.item.EmployeeName;},  
+									"td.CourseName"	    : function(arg) {return arg.item.CourseName;},  
+									"td.ClassName"		: function(arg) {return arg.item.ClassName == null ? '-' : arg.item.ClassName;},  
+									"td.LearningHours"	: function(arg) {return arg.item.LearningHours;}, 
+									"td.StartDate"		: function(arg) {return arg.item.StartDate != '-' ? formatDate(new Date(arg.item.StartDate)) : '-';},
+									"td.EndDate"		: function(arg) {return formatDate(new Date(arg.item.EndDate));},
+								}
+							}
+						};
+						//console.log('Dir',Dir);
+						
+						$('.showtrainingsList').render(response, Dir);
+						$('.showtrainingsList').DataTable();
+						
+					}else{
+						$('#showtrainingsList').html("No Training Hour Details Found");
+					}
+				}				
+			});
+		});
+		}else{
+			$('#trainingHrs').css('cursor','text');
+		}	
+		$('.marquee').marquee({
+			duration: 5000,
+			gap:10,
+			delayBeforeStart:10,
+			direction:'up',
+			pauseOnCycle:true,
+			pauseOnHover:true
+		});
+		  
+		$('#sadQuestionnaireDiv').addClass('clear'); 
+			//happiness index starts
+			var count=0;
+			$('#happyIndex').dialog({
+				autoOpen: false,
+				show: {
+					effect: "slide",
+					duration: 500
+					},
+				width: 1280,
+				modal: true,
+				closeOnEscape: false,
+				resizable: false,
+				dialogClass: 'bg-trans',
+				position: ['center',5],
+				buttons: {}
+			});
+			$('#sadQuestionnaireDiv').dialog({
+							autoOpen: false,
+							show: {
+								effect: "slide",
+								duration: 500
+								},
+							width: 500,
+							modal: true,
+							closeOnEscape: false,
+							resizable: false,
+							dialogClass: 'bg-trans',
+							position: ['center',5],
+							buttons: {}
+						});
+		 
+			$("#happyIndex").dialog().dialog("widget").find( ".ui-dialog-titlebar-close" ).hide();
+			$('.emoticons').click(function(){
+				var emotion_index =  $(this).attr("data-id");
+				if(emotion_index == 3) {
+					$("#happyIndex").dialog().dialog("widget").find( ".ui-dialog-titlebar-close" ).hide(); 
+					$('#happyIndex').dialog('close');
+					$('#sadQuestionnaireDiv').removeClass('clear');
+					$('#sadQuestionnaireDiv').dialog('open');  
+					
+				} else {
+					$.ajax({
+						url : "/dashboard/happyIndex",
+						type: "POST",
+						data : 'emotion_index='+ emotion_index,
+						success: function(data)
+						{
+							$('.ui-widget-overlay').addClass('clear'); 
+							$('#happyIndex').dialog('close');
+							$('header.top').css('position','fixed');
+							$('#successAlert').removeClass('clear');
+							$('#successAlertMsg').html(data);
+							$('#successAlert').fadeIn();
+							$('#successAlert').removeClass('clear');
+							$('html, body').animate({ scrollTop: 1 }, 500);
+							setTimeout(function(){$('#successAlert').fadeOut("slow");}, 2000);
+						}
+					});
+				}
+			});
+			//Happiness index ends
+			
+			 
+			showHappyDialog();
+						
+			$('#sayCongrats').on('shown.bs.modal', function() {
+				$('.generalNotifications').marquee('pause');
+			});
+			$('#sayCongrats').on('hidden.bs.modal', function() {
+				$('.generalNotifications').marquee('resume');
+			});
+		
+			$('#sadreason').change(function() {
+				if($(this).val() == 'Others') {
+					$('#reason_comment').removeClass('clear');
+				} else {
+					$('#reason_comment').addClass('clear');
+				}
+			})
+			
+		$(document).on('click','.joinings',function(e){
+			e.preventDefault();
+			var empId = $(this).attr('rel');
+			var src = 'http://10.11.12.141:98/employeesAdmin/viewjoinings';
+			$.ajax({
+				url: src, 
+				type:'post',
+				dataType: 'html',
+				data: "empId="+empId+"&congrts=1",
+				beforeSend: function() {
+					$('div#loadingImg').removeClass('clear');					
+				},
+				success: function(response){  
+					$('div#loadingImg').addClass('clear');	
+					$('div#Viewjoins').removeClass('clear');
+					$('.viewFeed').html(response);		
+					$('#viewJoins').modal('show');
+				},
+				error: function(){/*alert("Error : Session Timed out. Please relogin");*/}
+			});
+		});
+	
+			
+			$('.reasonSbmit').click(function(){ 
+				if($('#sadreason').val() == '') {
+					$('#sadreason').addClass('highlight_item_error');
+					return false;
+				}
+				else if($('#sadreason').val() == 'Others' &&   $('#reason_comment #comment').val().replace(/^\s+|\s+$/g, '').length == 0) { 
+					$('#reason_comment #comment').addClass('highlight_item_error');
+					return false;
+				} else {
+					$('#reason_comment #comment').removeClass('highlight_item_error');
+				}
+				 
+				var formData = [$('#sadreason').val(),$('#comment').val()];
+				var formRecords = JSON.stringify(formData); 
+				$.ajax({
+					type: "POST", 
+					data: 'emotion_index=3&formData=' + encodeURIComponent(formRecords),	
+					url: "/dashboard/happyIndex",	
+					async:true,
+					cache: false,
+					success: function(response){ 
+						if(response){   
+							$('.ui-widget-overlay').addClass('clear');
+							$('#sadQuestionnaireDiv').dialog('close'); 
+							$('header.top').css('position','fixed');
+							$('#successAlert').removeClass('clear');
+							$('#successAlertMsg').html(response);
+							$('#successAlert').fadeIn();
+							$('#successAlert').removeClass('clear');
+							$('html, body').animate({ scrollTop: 1 }, 500);
+							setTimeout(function(){$('#successAlert').fadeOut("slow");}, 2000);
+						}
+					}
+				});
+			});
+			
+			$('#drpMsg').click(function(){
+			// $('#drpMsg').submit();
+				
+				var formData = [$('#dropmessage').val(),$('#empid').val(),$('#msgType').val()];
+				var formRecords = JSON.stringify(formData); 
+				$.ajax({
+					type: "POST",
+					dataType: 'json',
+					data: 'formData=' + encodeURIComponent(formRecords),	
+					url: "/dashboard/sayCongrats",	
+					async:true,
+					cache: false,
+					success: function(response){
+						if(response){  
+							$('.successNotifyMsg').removeClass('clear');  
+							$('.successNotifyMsg').fadeIn();
+							setTimeout(function(){$('.successNotifyMsg').fadeOut("slow");}, 2000);
+							$('#sayCongrats #empid').val('');
+							$('#sayCongrats #msgType').val('');
+							$('#sayCongrats #dropmessage').val('');
+							$('#sayCongrats').modal('toggle'); 
+							$.ajax({							
+								type: "POST",
+								dataType: 'html',
+								url: "/dashboard/getGenNotifications",	
+								async:true,
+								cache: false,
+								success: function(response){ 
+									if(data){									
+										 $('#generalNotifications').html(data);
+									}
+								} 
+							});
+						}
+					}
+				});
+			});
+			/*Notification Details Section*/
+			var notifyDtls = {
+				'p.sender':'#{Notification.reqName.Employee.first_name} #{Notification.reqName.Employee.last_name}',
+				'p.title':'NotifyTpl.subject_fmt',
+				'p.desc':'Notification.content_params',
+			};
+
+			$('a.notify').click(function(e){
+				
+				var notifyId = $(this).attr('id');
+				var notificationId = notifyId.replace('notify', '');
+				var emailElem = $(this).parent().prev($('p.notifyDtls')).attr('element');
+				var emailSystem = $(this).parent().prev($('p.notifyDtls')).html();
+				var dateDlg = $(this).parent().parent().children($('p.date')).html();
+				var title = $(this).html();
+				
+				$.ajax({
+					url: "http://10.11.12.141:98/dashboard/ajaxNotification",
+					dataType: "html",
+					"async" : true,
+					data:({notificationId:notificationId}),
+					success: function(data){
+						if(data){
+							$('div.notifyDlg').parent().find('span.ui-dialog-title').html(title);
+							$('div.notifyDlg').html('<div class="col-md-12 p0 mb20"><div class="col-md-6 p0"><strong>From : </strong><span>'+emailSystem+'</span></div><div class="col-md-6"><strong>Date : </strong><span>'+dateDlg+'</span></div></div><br/>')
+							$('div.notifyDlg').append(data);
+							$('div.notifyDlg').dialog('open');
+						}
+					} 
+				});
+			return false;
+			});
+			 
+			$('div.notifyDlg').dialog({
+				autoOpen: false,
+				modal: true,
+				width:950,
+				height :$(window).height() - 200,
+				closeOnEscape: false,
+				resizable: false,
+				open: function(){
+					$('#official_notifications .offNotify').marquee('pause');
+					$('body').css("overflow", "hidden");
+					// var windowHeight = $(window).height();alert(windowHeight);
+					// var windowDialog = $('div.notifyDlg').height();alert(windowDialog);
+					
+					// if(windowDialog > windowHeight ){
+						// var remaing =((windowDialog - windowHeight) + 40);alert(remaing);
+						// $('div.notifyDlg').css("height", (windowHeight - remaing));
+						// $('div.notifyDlg').css("overflow", "auto");
+						 // $(this).dialog('option', 'maxHeight', $(window).height() -100 );
+					// }
+				},
+				close: function(){
+					$(this).html('');
+					$('#official_notifications .offNotify').marquee('resume');
+					$('body').css("overflow-y", "auto");
+				}
+			});
+			
+		
+			
+			$('#carousel1, #carousel2').infiniteCarousel();
+			jQuery(function(){
+				jQuery('#camera_wrap_1').camera({
+					height: '350px',
+					loader: 'none',
+					pagination: false,
+					thumbnails: false,
+					fx: 'scrollHorz',
+					playPause: false,
+					loaderOpacity: .8,
+					loaderPadding: 6,
+					barPosition: 'bottom',
+					navigation: true,
+					navigationHover: false,
+					autoAdvance: true,
+					time: 20000,
+					transPeriod: 1400
+				}); 
+				 
+				var slidecount = $("#camera_wrap_1 .cameraContents > div").length;
+	 
+			});
+		 
+			
+			$('#loadingImg').hide()  // hide it initially
+			.ajaxStart(function() {
+				$(this).show();
+			})
+			.ajaxStop(function() {
+				$(this).hide();
+			});
+
+			
+		
+		Highcharts.chart('container', {
+		chart: {
+			backgroundColor: null,
+			plotBorderWidth: 0,
+			plotShadow: false,
+			 margin: [0,0,0,0],
+			height:250
+		},
+		title: {
+			text: '',
+			align: 'center',
+			verticalAlign: 'middle',
+			y: 40
+		},
+		tooltip: {
+			pointFormat: 'Current Month : <b>{point.percentage:.1f}%</b>'
+		},
+		exporting: { enabled: false },
+		plotOptions: {
+			pie: {
+				dataLabels: {
+					enabled: true,
+					distance: -30,
+					style: {
+						fontWeight: 'bold',
+						color: 'black'
+						
+						
+					}
+				},
+				borderWidth: "0",
+				startAngle: -90,
+				endAngle: 90,
+				center: ['50%', '50%']
+			}
+		},
+		xAxis:{
+			minPadding:0,
+			maxPadding:0
+		},
+		yAxis:{
+			minPadding:0,
+			maxPadding:0
+		},
+		 colors: ['rgb(130, 195, 54)' , 'rgba(255, 255, 0, 0.8)' ,'rgba(255, 255, 255, 0.85)' ],
+		series: [{
+			type: 'pie',
+			name: 'Happiness Meter',
+			innerSize: '50%',	
+			data: [
+				['Happy',100],['',0],['',0],				
+			]
+		}]
+		});
+		
+		$('#sbmBtnCidf').button().click(function(){
+			var isError = false;
+			
+			if($('#ques1radioYes').prop('checked')==true || $('#ques1radioNo').prop('checked')==true){
+				if($('#ques1radioYes').prop('checked')==true && $('#ques1tarea').val().replace(/^\s+|\s+$/g, '').length == 0){
+					$('#ques1tarea').addClass('highlight_item_error');
+					isError = true;
+				}
+				$('.span1').removeClass('highlight_text_error');
+			}else{
+				$('.span1').addClass('highlight_text_error');
+				isError = true;
+			}
+			if($('#ques2radioYes').prop('checked')==true || $('#ques2radioNo').prop('checked')==true){
+				if($('#ques2radioYes').prop('checked')==true && $('#ques2tarea').val().replace(/^\s+|\s+$/g, '').length == 0){
+					$('#ques2tarea').addClass('highlight_item_error');
+					isError = true;
+				}
+				$('.span2').removeClass('highlight_text_error');
+			}else{
+				$('.span2').addClass('highlight_text_error');
+				isError = true;
+			}
+			if($('#ques3radioYes').prop('checked')==true || $('#ques3radioNo').prop('checked')==true){
+				if($('#ques3radioYes').prop('checked')==true && $('#ques3tarea').val().replace(/^\s+|\s+$/g, '').length == 0){
+					$('#ques3tarea').addClass('highlight_item_error');
+					isError = true;
+				}
+				$('.span3').removeClass('highlight_text_error');
+			}else{
+				$('.span3').addClass('highlight_text_error');
+				isError = true;
+			}
+			if($('#ques4radioYes').prop('checked')==true || $('#ques4radioNo').prop('checked')==true){
+				if($('#ques4radioYes').prop('checked')==true && $('#ques4tarea').val().replace(/^\s+|\s+$/g, '').length == 0){
+					$('#ques4tarea').addClass('highlight_item_error');
+					isError = true;
+				}
+				$('.span4').removeClass('highlight_text_error');
+			}else{
+				$('.span4').addClass('highlight_text_error');
+				isError = true;
+			}
+			if($('#ques5radioYes').prop('checked')==true || $('#ques5radioNo').prop('checked')==true){
+				if($('#ques5radioYes').prop('checked')==true && $('#ques5tarea').val().replace(/^\s+|\s+$/g, '').length == 0){
+					$('#ques5tarea').addClass('highlight_item_error');
+					isError = true;
+				}
+				$('.span5').removeClass('highlight_text_error');
+			}else{
+				$('.span5').addClass('highlight_text_error');
+				isError = true;
+			}
+			
+			if(isError == true){
+				$("#errorMsg").removeClass('clear');
+				$(".radios").addClass('highlight_item_error'); 
+				$('#cidfDialog').animate({
+					scrollTop: $("#alerts").offset().top
+				}, 500);
+			}else{
+				var strCidf =  $('#sbmCidfForm').serializeArray();
+				sendCIDForm(strCidf);
+			}
+			
+		});
+		
+		$(document).on("click",".yesRadio",function () {;
+			$(this).parent().find(".yesComments").removeClass('clear');	
+			$(this).parent().find('.span').removeClass('highlight_text_error');
+		});
+		$(document).on("click",".noRadio",function () {
+			$(this).parent().find(".yesComments").addClass('clear');
+			$(this).parent().find('.span').removeClass('highlight_text_error');		
+		});
+		
+		
+	});
+	
+	function showHappyDialog() {
+			}
+	
+	function showGDPRDialog() { 
+			$('#gdprDialog').dialog('open');   
+	}
+	
+	 function sendGDPFAgreement(isAccept) {
+	   $.ajax({
+			type: "POST",
+			dataType: 'json', 
+			url: "/employees/gdprAgrement",	
+			async: true,
+			data :'isAccept='+isAccept,
+			cache: false,
+			beforeSend : function()  {
+				$('#loadingImg').removeClass('displayNone');
+				 $('#loadingImg').show();	
+			},
+			success: function(response){ 
+				var acceptTerms = (isAccept != 0 ? 'Accepted' : 'Not Accepted');
+				$('#loadingImg').addClass('displayNone');
+				$('#loadingImg').hide();	
+				$('.gdprAgreement').hide();				 
+				$('#gdprDialog').dialog('close');
+				$('.ui-widget-overlay-gdpr').addClass('clear'); 
+				$('#successAlert').removeClass('clear');
+				$('#successAlertMsg').html('You have '+acceptTerms+' the request');
+				$('#successAlert').fadeIn();
+				$('#successAlert').removeClass('clear');
+				$('html, body').animate({ scrollTop: 1 }, 500);
+				setTimeout(function(){$('#successAlert').fadeOut("slow");}, 5000);
+				showidfForm();
+			}
+		}); 
+   }
+   
+   function sendCIDForm(strCidf){
+		$.ajax({
+			type: "POST",
+			dataType: 'json', 
+			url: "/dashboard/savecidform",	
+			async: true,
+			data : strCidf,
+			cache: false,
+			beforeSend : function()  {
+				$('#loadingImg').removeClass('displayNone');
+				$('#loadingImg').show();	
+			},
+			success: function(response){ 
+				
+				$('#loadingImg').addClass('displayNone');
+				$('#loadingImg').hide();	
+				$('.cidfForm').hide();				 
+				$('#cidfDialog').dialog('close');
+				$('.ui-widget-overlay-cidf').addClass('clear'); 
+				$('#successAlert').removeClass('clear');
+				$('#successAlertMsg').html('You have submitted Interest Disclosure Form Successfully.');
+				$('#successAlert').fadeIn();
+				$('#successAlert').removeClass('clear');
+				$('html, body').animate({ scrollTop: 1 }, 500);
+				setTimeout(function(){$('#successAlert').fadeOut("slow");}, 5000);
+				showHappyDialog();
+			}
+		});
+	}
+
+	function showidfForm(){
+		$('#cidfDialog').dialog({
+				show: {
+					effect: "slide",
+					duration: 300
+					},
+				width: 1280,
+				modal: true,
+				closeOnEscape: false,
+				draggable: false,
+				resizable: false,
+				position: ['center',5],
+				title:'Conflict of Interest Disclosure Form',
+				buttons: {}
+							
+		});
+		$('#cidfDialog').parent().addClass('cidfDialog');
+		$('.ui-dialog-titlebar-close').addClass('clear');
+	}/*]]>*/</script> </div><div class="clear" style="height: 2px; width: 100%;"></div> <footer class="bottom-app"><p style="margin:0px !important;text-transform:capitalize" class="copyright">Copyright © 2020 <a href="http://prolifics.com" class="js-mammoth-link" target="_blank"><span style="color:#337ab7;">Prolifics</span></a>.
+All Rights Reserved.</p></footer> </section><style>h4.modal-title{
+	color:#333;
+}
+.c_panel_warning .c_title{
+	    border: 1px solid #dddddd;
+    background: #e9e9e9;
+    color: #333333;
+    font-weight: bold;
+}
+.contactModal{
+	 background: #fff;
+}
+.contactModal .c_content{
+	 background:#f0eeee;
+}
+.headingstyle{
+	    color: #333;
+    font-size: 14px !important;
+    font-weight: bold;
+}
+.c_panel{
+	margin-bottom:0px !important;
+	
+}
+.subContactModals {
+	z-index: 2001 !important;
+}	
+.modalwdth{
+	width:450px !important;
+}
+.datawrp {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.c_panel_warning .c_title {
+    background: #daedf7 !important;
+}</style><div class="modal modal-pull-top subContactModals" id="hr-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title "><strong>HR</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> First Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 "> Human Resources</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="indiahrhelpdesk@prolifics.com"> <a href="mailto:indiahrhelpdesk@prolifics.com">indiahrhelpdesk@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5"> N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong> Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> Second Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 "> Sharath Rahula</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="sharath.rahula@prolifics.com"> <a href="mailto:sharath.rahula@prolifics.com">sharath.rahula@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5"> 3999-1602</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong> Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> Third Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 "> Partha Patnaik</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Partha.Patnaik@prolifics.com"> <a href="mailto:Partha.Patnaik@prolifics.com">Partha.Patnaik@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5"> 3999-1611</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="hiring-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Hiring &amp; Referrals</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> First Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Hiring</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="hiring@prolifics.com"> <a href="mailto:hiring@prolifics.com">hiring@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong> Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> Second Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Praveen Shyam</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Praveen.Shyam@prolifics.com"> <a href="mailto:Praveen.Shyam@prolifics.com">Praveen.Shyam@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1580</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong> Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> Third Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Partha Patnaik</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Partha.Patnaik@prolifics.com"> <a href="mailto:Partha.Patnaik@prolifics.com">Partha.Patnaik@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1611</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="payroll-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Finance-Payroll</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Finance-Payroll issues</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="indiahrhelpdesk@prolifics.com"> <a href="mailto:indiahrhelpdesk@prolifics.com">indiahrhelpdesk@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Sharath Rahula</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Sharath.Rahula@prolifics.com"> <a href="mailto:Sharath.Rahula@prolifics.com">Sharath.Rahula@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1633</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Partha Patnaik</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Partha.Patnaik@prolifics.com"> <a href="mailto:Partha.Patnaik@prolifics.com">Partha.Patnaik@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1611</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="finance-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong> Finance-Other</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Finance-Other issues</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="indiafinancehelpdesk@prolifics.com"> <a href="mailto:indiafinancehelpdesk@prolifics.com">indiafinancehelpdesk@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Tasneem Abuwala</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Tasneem.Abuwala@prolifics.com"> <a href="mailto:Tasneem.Abuwala@prolifics.com">Tasneem.Abuwala@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1563</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Biju Nair</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Biju.Nair@prolifics.com"> <a href="mailto:Biju.Nair@prolifics.com">Biju.Nair@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1566</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals in" id="facility-modal" aria-hidden="true" style="display: block;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Facilities</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 ">Facilities</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="facilitieshelpdesk@prolifics.com"> <a href="mailto:facilitieshelpdesk@prolifics.com">facilitieshelpdesk@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 ">Rama Rao Bolli</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Ramarao.Bolli@prolifics.com"> <a href="mailto:Ramarao.Bolli@prolifics.com">Ramarao.Bolli@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1617</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 ">Rama Rao Bolli</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Ramarao.Bolli@prolifics.com"> <a href="mailto:Ramarao.Bolli@prolifics.com">Ramarao.Bolli@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1617</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="network-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Network</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Network</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="ithelpdesk@prolifics.com"> <a href="mailto:ithelpdesk@prolifics.com">ithelpdesk@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Ranganayakulu Yarlagadda</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Ranga.Yarlagadda@prolifics.com"> <a href="mailto:Ranga.Yarlagadda@prolifics.com">Ranga.Yarlagadda@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1602</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Rama Rao Bolli</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Ramarao.Bolli@prolifics.com"> <a href="mailto:Ramarao.Bolli@prolifics.com">Ramarao.Bolli@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1617</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="pcqa-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title modalwdth"><strong>PCQA</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Process Compliance and Quality Assurance</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3 mt5"><strong> Email </strong></label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="pcqahelpdesk@prolifics.com"> <a href="mailto:pcqahelpdesk@prolifics.com">pcqahelpdesk@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3 mt5"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Srikrishna Bhattiprolu</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3 mt5"><strong> Email </strong></label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Sri.Bhattiprolu@prolifics.com"> <a href="mailto:Sri.Bhattiprolu@prolifics.com">Sri.Bhattiprolu@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3 mt5"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1521</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Yegneswaran Venkatachalapathy</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3 mt5"><strong> Email </strong></label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Yegneswaran.venkatachalapathy@prolifics.com"> <a href="mailto:Yegneswaran.venkatachalapathy@prolifics.com">Yegneswaran.venkatachalapathy@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3 mt5"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1136</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="incident-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Incidents</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Incidents</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Incidents@prolifics.com"> <a href="mailto:Incidents@prolifics.com">Incidents@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Yegneswaran Venkatachalapathy</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Yegneswaran.venkatachalapathy@prolifics.com"> <a href="mailto:Yegneswaran.venkatachalapathy@prolifics.com">Yegneswaran.venkatachalapathy@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1136</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Yegneswaran Venkatachalapathy</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Yegneswaran.venkatachalapathy@prolifics.com"> <a href="mailto:Yegneswaran.venkatachalapathy@prolifics.com">Yegneswaran.venkatachalapathy@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1136</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="app-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Application Support</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> First Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Application Support</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="appsupport@prolifics.com"> <a href="mailto:appsupport@prolifics.com">appsupport@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> Second Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Balarama Gali</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="balarama.gali@prolifics.com"> <a href="mailto:balarama.gali@prolifics.com">balarama.gali@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1518</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0"> Third Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Rajeshwar Akinapelli</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Rajeshwar.Akinapelli@prolifics.com"> <a href="mailto:Rajeshwar.Akinapelli@prolifics.com">Rajeshwar.Akinapelli@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1515</span></div></div></div></div></div></div></div></div></div></div><div class="modal modal-pull-top subContactModals" id="learning-modal" aria-hidden="true" style="display: none;"><div class="modal-dialog modalwdth mt10"><div class="modal-content animated fadeIn"><div class="modal-header"> <button class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button><h4 class="modal-title"><strong>Learning &amp; Development</strong></h4></div><div class="modal-body contactModal" style="max-height: 651px;"><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">First  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Learning &amp; Development</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Training@prolifics.com"> <a href="mailto:Training@prolifics.com">Training@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">N/A</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Second  level contact if your issue is not addressed by First  Level within 3  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Second  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Rupali Bodekar</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Rupali.Bodekar@prolifics.com"> <a href="mailto:Rupali.Bodekar@prolifics.com">Rupali.Bodekar@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1602</span></div></div></div></div><div class="col-xs-12 p0 mb5"><div class="ui-state-highlight ui-corner-all "> <span class="ui-icon ui-icon-alert" style="float:left; margin-right:0.3em;"></span> <span style="font-size:12px;"><strong>NOTE : </strong>Escalate to Third  level contact if your issue is not addressed by Second  Level within 7  Business Days.</span></div></div></div></div><div class=""><div class="col-md-12 p0"><div class="c_panel c_panel_warning"><div class="c_title p0 pl10"><h3 class="headingstyle p0">Third  Level of Contact</h3><div class="clearfix"></div></div><div class="c_content"><div class="form-group"><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Name </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">Srikanth Simhadri</span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Email </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5 datawrp" title="Srikanth.Simhadri@prolifics.com"> <a href="mailto:Srikanth.Simhadri@prolifics.com">Srikanth.Simhadri@prolifics.com</a> </span></div><div class="col-md-12"> <label for="field-3" class="control-label col-md-3"> <strong> Contact </strong> </label> <span class="col-md-1 mt5"> :</span> <span class="col-md-8 mt5">3999-1558</span></div></div></div></div></div></div></div></div></div></div><div class="modal fade" id="sayCongrats" role="dialog"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"> <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button><h4 class="modal-title">Say Congrats</h4></div><div class="modal-body" style="max-height: 651px;"><form method="post" id="drpMsgFrm"> <input type="hidden" name="empid" id="empid"> <input type="hidden" name="msgType" id="msgType"><textarea rows="4" cols="5" class="form-control" name="dropmessage" id="dropmessage" placeholder="Message"></textarea><br><div class="col-md-12 text-center"> <button type="button" name="drpMsg" id="drpMsg" class="btn btn-raised  btn-orange mr5 btn-owncolor"> <i class="fa fa-save"></i> Send Message</button></div></form></div></div></div></div><div class="modal right fade in" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" style="display: block;"><div class="modal-dialog modal-sm" role="document" style="right: 10%; position: absolute;top: 0px;"><div class="modal-content"><div class="modal-header p10"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title" id="contactModal"><i class="fa fa-phone"></i>Contact Information</h4></div><div class="modal-body p10" style="max-height: 651px;"><div class="c_panel c_panel_default notifyMe b" style="height :325px !important;;"><div class="c_content pt5 pb5 mb10"><ul class="list-unstyled mb0 quickLinksChild quickLinkshghlgt"><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#app-modal" href="#" id="contact9"> <i class="fa fa-comments fa-2x mt10 quickIcon"></i><div>Application Support</div> </a></li><li class="pb5 bbdashed bwizard-steps active"> <a data-toggle="modal" data-target="#facility-modal" href="#" id="contact3"> <i class="fa fa-umbrella fa-2x mt10 quickIcon"></i><div>Facilities</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#finance-modal" href="#" id="contact6"> <i class="fa fa-money fa-2x mt10 quickIcon"></i><div>Finance - Other</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#payroll-modal" href="#" id="contact5"> <i class="fa fa-dollar fa-2x mt10 quickIcon"></i><div>Finance - Payroll</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#hiring-modal" href="#" id="contact2"> <i class="fa fa-users fa-2x mt10 quickIcon"></i><div>Hiring &amp; Referrals</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#hr-modal" href="#" id="contact1"> <i class="fa fa-user fa-2x mt10 quickIcon"></i><div>HR</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#incident-modal" href="#" id="contact8"> <i class="fa fa-warning fa-2x mt10 quickIcon"></i><div>Incidents</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#learning-modal" href="#"> <i class="fa fa-book fa-2x mt10 quickIcon"></i><div>L &amp; D</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#network-modal" href="#" id="contact4"> <i class="fa fa-desktop fa-2x mt10 quickIcon"></i><div>Network</div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a data-toggle="modal" data-target="#pcqa-modal" href="#" id="contact7"> <i class="fa fa-certificate fa-2x mt10 quickIcon"></i><div>PCQA</div> </a></li></ul></div></div></div></div></div></div><div class="modal right fade" id="linksModal" tabindex="-1" role="dialog" aria-labelledby="linksModal"><div class="modal-dialog modal-sm" role="document" style="right: 10%; position: absolute;top: 0px;"><div class="modal-content"><div class="modal-header p10"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title" id="linksModal"> <i class="fa fa-th"></i> Quick Links</h4></div><div class="modal-body p10" style="max-height: 100% !important;"><div class="c_panel c_panel_default notifyMe b" style="height: 390px !important;;"><div class="c_content p5 mb10"><ul class="list-unstyled mb0 quickLinksChild"><li class="pb5 bbdashed bwizard-steps"> <a href="https://www.ess.adp.in/ESS4/default.aspx" target="_blank"> <i class="fa fa-file-o fa-2x mt10 quickIcon"></i><div>ADP (Payslip)</div> </a></li><li class="pb5 bbdashed"> <a href="http://campus.prolifics.com" target="_blank"> <i class="fa fa-user fa-2x mt10 quickIcon"></i><div>Campus</div> </a></li><li class="pb5 bbdashed"> <a href="https://subsites.bookboon.com/prolifics-elibrary-en?token=y20fEdW6QfeTYNr7FQUTg" target="_blank" id=""> <i class="fa fa-file-text-o fa-2x mt10 quickIcon"></i><div>eLibrary</div> </a></li><li class="pb5 bbdashed"> <a href="/dashboard/lmsLink" target="_blank" id="lmsLink" title="Username: firstname.lastname@prolifics.com
+PWD: LMS@123"> <i class="fa fa-book fa-2x mt10 quickIcon"></i><div>eLMS<span style="font-size:10px"> [Learning Portal]</span></div> </a></li><li class="pb5 bbdashed bwizard-steps"> <a href="https://careers-prolifics.icims.com" target="_blank"> <i class="fa fa-user fa-2x mt10 quickIcon"></i><div>Hiring</div> </a></li><li class="pb5 bbdashed"> <a href="https://ithelpdesk.prolifics.com/otrs/customer.pl" target="_blank"> <i class="fa fa-file fa-2x mt10 quickIcon"></i><div>IT HelpDesk</div> </a></li><li class="pb5 bbdashed"> <a href="http://kmportal.prolifics.com" target="_blank"> <i class="fa fa-files-o fa-2x mt10 quickIcon"></i><div>KM Portal</div> </a></li><li class="pb5 bbdashed"> <a href="https://prolifics.librarika.com" target="_blank" id=""> <i class="fa fa-check-square-o fa-2x mt10 quickIcon"></i><div>Librarika</div> </a></li><li class="pb5 bbdashed"> <a href="/dms/index/policy" target="_blank" id=""> <i class="fa fa-check-square-o fa-2x mt10 quickIcon"></i><div>Policy</div> </a></li><li class="pb5 bbdashed"> <a href="https://ppm.prolifics.com" target="_blank" id=""> <i class="fa fa-check-square-o fa-2x mt10 quickIcon"></i><div>PPM</div> </a></li><li class="pb5 bbdashed"> <a href="http://www.prolifics-testing.com" target="_blank"> <i class="fa fa-globe fa-2x mt10 quickIcon"></i><div>Prolifics Testing</div> </a></li><li class="pb5 bbdashed"> <a href="http://www.prolifics.com" target="_blank"> <i class="fa fa-globe fa-2x mt10 quickIcon"></i><div>Prolifics Website</div> </a></li></ul></div></div></div></div></div></div> <script type="text/javascript">/*<![CDATA[*/$(window).load(function(){
+	$(".alert").fadeTo(2000, 500).slideUp(500, function(){
+		$(".alert").slideUp(800);
+	});
+
+});
+
+$(".bbdashed").click(function(){
+  $(this).addClass("active");
+});
+$('.subContactModals').on('hidden.bs.modal', function (e) {
+    $(".bbdashed").removeClass("active");
+})
+$('#searchKey').next('input').attr('title', "Search Format : <<FirstName MiddleName LastName>>");
+$(document).on('mouseover', 'div.starWrapper i',function(){
+	$("div.starWrapper i.fa-star-o").css('color','#FFD119');
+	var rating = $(this).data("value");
+	var maxVal=$('.clickStarVal').val();
+	for (i = 0; i <=rating; i++) { 
+		$("i.feedStar"+i).removeClass("fa-star-o");
+		$("i.feedStar"+i).addClass("fa-star");
+	}
+});
+$(document).on('mouseout', 'div.starWrapper i',function(){
+	var rating = $(this).data("value");
+	var maxVal=$('.clickStarVal').val();
+	if(maxVal.length > 0){
+	for (i = (parseInt(maxVal)+1); i <= 5; i++) {   
+		$("i.feedStar"+i).addClass("fa-star-o");
+		$("i.feedStar"+i).removeClass("fa-star");
+	}
+	}else{
+		$("div.starWrapper i").addClass("fa-star-o");
+		$("div.starWrapper i").removeClass("fa-star");
+	}
+});
+
+
+$(document).on('click ', 'div.starWrapper i',function(){
+	var rating = $(this).data("value");
+	$('.clickStarVal').val(rating);
+	$("div.starWrapper i.fa-star").addClass("fa-star-o");
+	$("div.starWrapper i.fa-star").removeClass("fa-star");
+	for (i = 0; i <= rating; i++) { 
+		$("i.feedStar"+i).removeClass("fa-star-o");
+		$("i.feedStar"+i).addClass("fa-star");
+	}
+});
+$(document).on(' keypress',  '.ui-autocomplete-input' , function(event){ 
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){ 
+       getEmpDtls();
+    }
+});
+
+	$(document).on('click ', '.ui-menu-item',function(){
+		getEmpDtls();
+    });
+	
+	function getEmpDtls(){
+		
+		var id = $('#searchKey').val();
+	
+         if (id.replace(/^\s+|\s+$/g, '').length > 0) {
+            $(this).attr("target", "_blank");			
+			if($('#customsearch').val()=='Employee'){
+			url='/employees/bio?EmpId=' + id;			
+			location.href = url;
+		  }
+            
+          }
+			var id = $('#searchKey').val();
+				if (id.replace(/^\s+|\s+$/g, '').length > 0) {
+					$(this).attr("target", "_blank");
+				if($('#customsearch').val()=='Skills'){
+					url='/employees/skills?id=' + id;
+					location.href = url;
+		  }
+		  }
+		 var hobid = $('#searchKey').val();
+			  if (hobid.replace(/^\s+|\s+$/g, '').length > 0) {
+				$(this).attr("target", "_blank");
+			 if($('#customsearch').val()=='Hobbies'){
+				url='/employees/hobbies?hobby_id=' + hobid +'&search=hobby';
+				location.href = url;
+		  }
+		  }
+			
+	}
+
+$("#attr_reason").addClass('form-control');
+
+function gobalCombo(){
+		$("#searchKey").val("");
+		$("#searchKey").next('input').val("");
+		$('.keysearch').attr("placeholder",$('#customsearch').val());
+			$('#searchKey').next('input').attr('title','');
+		if($('#customsearch').val()=='Skills'){
+			$('#searchKey').ajaxcombobox({src: "http://10.11.12.141:98/employees/searchdtls"});
+			$('#infoFormat').css('visibility','hidden');
+	   }
+	   if($('#customsearch').val()=='Hobbies'){
+			$('#searchKey').ajaxcombobox({src: "http://10.11.12.141:98/employees/getdepts"});
+			$('#infoFormat').css('visibility','hidden');
+	   }
+	    if($('#customsearch').val()=='Employee'){
+		$('#searchKey').next('input').attr('title', "Search Format : <<FirstName MiddleName LastName>>");
+		$('#searchKey').ajaxcombobox({src: "http://10.11.12.141:98/employees/search"});
+		$('#infoFormat').css('visibility','visible');
+	   }
+	
+}
+
+$(document).ready(function(){	
+	gobalCombo();		
+	$("#customsearch").change(function(){
+	gobalCombo();
+	   
+	});
+	$("[data-toggle=popover]").popover({
+		html: true, 
+		content: function() {
+			  return $('#popover-content').html();
+			},
+		title:function() {
+		  return "Feedback";
+		}
+	});
+$(document).on( "click","#logOutBtn", function( event ) {	
+$("div.starWrapper i.fa").removeClass("fa-star");
+$("div.starWrapper i.fa").addClass("fa-star-o");
+$('textarea#fbArea').val("");
+$("div.starWrapper i.fa-star-o").css('color','#FFD119');
+	
+});
+// AJAX Code To Submit Feedbacks.
+$(document).on( "click","button.fbSbm", function( event ) {		
+	var empRate =$(this).closest('form').find('input.clickStarVal').val();
+	var feedBk  =$(this).closest('form').find('textarea#fbArea').val().trim();
+	var isError = false;
+	if (empRate.length == 0){		
+	$("div.starWrapper i.fa-star").addClass("fa-star-o");
+	$("div.starWrapper i.fa-star").removeClass("fa-star");
+	$("div.starWrapper i.fa-star-o").css('color','#CE5454');
+	isError = true;
+	}
+	if (feedBk.length == 0){		
+		 $(this).closest('form').find('textarea#fbArea').addClass('highlight_item_error');	
+		isError = true;		 
+		}else{		
+		$(this).closest('form').find('textarea#fbArea').removeClass('highlight_item_error');
+		}
+		
+		if(isError){return false;}else{
+		$('#fbloadingImg').removeClass('displayNone');
+	   $('#fbloadingImg').show();
+	
+			var str = { rating: empRate, feedBack: feedBk };
+			$.ajax({
+				type: "POST",
+				dataType: 'json',
+				data :  str,
+				url: "/dashboard/saveFeedBack",	
+				async:true,
+				cache: false,
+				success: function(response){ 
+					 $('#fbloadingImg').addClass('displayNone');
+					 $('#fbloadingImg').hide(); 
+					if(response == true){
+						$('#fbSuccessAlert').removeClass('clear');
+						$('#fbSuccessAlertMsg').html("Thanks for your feedback.");
+						$('#fbFailAlert').addClass('clear');
+						$('#fbSuccessAlert').fadeIn();
+						setTimeout(function(){$('#fbSuccessAlert').fadeOut("slow");}, 2000);
+							$('div.popover').popover('hide');			
+						}
+				 					
+					} 
+			}); 
+		}
+	});
+ 
+	$('body').on('hidden.bs.popover', function (e) {
+		$(e.target).data("bs.popover").inState.click = false;
+	});
+	
+    
+	$('[data-toggle=popover]').click(function (e) {
+		e.stopPropagation();
+	});
+	$(document).click(function (e) {
+		if (($('.popover').has(e.target).length == 0) || $(e.target).is('.close')) {
+			$('[data-toggle=popover]').popover('hide');
+		}
+	});
+	
+
+
+});/*]]>*/</script> <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front bg-trans ui-draggable" aria-describedby="sadQuestionnaireDiv" style="display: none;" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="sadQuestionnaireDiv" class="clear ui-dialog-content ui-widget-content" style="display: block;"><h1 class=" happyIndexTitle" style="font-size:28px"> Oops, please specify the reason</h1><div class="clear"></div><form action="/dashboard/info?url=dashboard%2Finfo" id="sadReasonFrm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"></div><div class="col-xs-12"><div class="form-group"><div class="col-md-12 "> <label class="col-md-3 pl0">Reason:</label> <select class="form-control col-md-8" name="sadreason" id="sadreason"><option value="" style="color:black;">&lt;&lt; Please Select Reason &gt;&gt;</option><option value="Work Stress" style="color:black;">Work Stress</option><option value="Supervisor" style="color:black;">Supervisor</option><option value="Career Growth" style="color:black;">Career Growth</option><option value="Team Members" style="color:black;">Team Members</option><option value="Technology" style="color:black;">Technology</option><option value="It's something personal" style="color:black;">It's something personal</option><option value="Others" style="color:black;">Others</option> </select></div></div><div class="col-md-12 "><div class="form-group clear" id="reason_comment"> <label class="col-md-3 pl0" for="comment">Comment:</label><textarea class="form-control col-md-8" rows="5" name="comment" id="comment"></textarea></div></div><div class="col-md-12 text-center"> <button type="button" class="btn btn-owncolor reasonSbmit" style="margin-top:10px">Submit</button></div></div></form></div></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" aria-describedby="notifyDlg" aria-labelledby="ui-id-2" style="display: none;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="notifyDlg" class="notifyDlg m10 ui-dialog-content ui-widget-content"></div></div><ul id="ui-id-3" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="modal-backdrop fade in"></div><div class="modal-backdrop in"></div></body></html>
